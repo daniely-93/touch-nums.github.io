@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.results-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.results-list li {
+    height: 30px;
+    margin: 0 0 7px 0;
+    font-size: 20px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: underline;
+    width: 93%;
+}
+
+.results {
+    color: white;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    right: 0;
+    top: 10px;
+    transform: translateX(-50%);
+}
+
+.game-settings {
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+input[type=radio] {
+    margin: 20px 5px;
+    width:10000px;
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(105, 43, 107);
+    color: white;
+    transition: all 0.3s;
+}
+
+
+.button:hover {
+    background-color: rgb(58, 25, 59);
+    transform: scale(1.01);
+}
+
+.info {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 36px;
+}
+
+.table {
+    margin: 0px auto;
+    padding: 6px;
+}
+
+.table td {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    background: linear-gradient(to right bottom, #8d8d8d, #a8a8a8, #c4c4c4, #e1e1e1, #ffffff);
+    font-size: 32px;
+    border-radius: 3px;
+    width: 30px;
+    cursor: pointer;
+    /* user-select: none; */
+}
+
+.radio-btn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.radio-btn:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.radio-btn input:checked~.checkmark {
+    background-color: rgb(105, 43, 107);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}   
+
+.radio-btn input:checked~.checkmark:after {
+    display: block;
+}
+
+label{
+    transition: all .5s;
+}
+
+label:hover  {
+    color: rgb(105, 43, 107);
+}
